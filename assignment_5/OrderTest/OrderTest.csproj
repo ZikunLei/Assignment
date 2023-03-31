@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{F52BD512-3FBA-476E-AF9A-113720CBA4B5}</ProjectGuid>
-    <OutputType>Library</OutputType>
-    <RootNamespace>Order</RootNamespace>
-    <AssemblyName>Order</AssemblyName>
+    <ProjectGuid>{1D53FE20-BBE6-4E26-AED5-EF9131FF9D01}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>OrderTest</RootNamespace>
+    <AssemblyName>OrderTest</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -32,9 +32,6 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
-  <PropertyGroup>
-    <StartupObject />
-  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -46,11 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Customer.cs" />
-    <Compile Include="Good.cs" />
-    <Compile Include="Order.cs" />
-    <Compile Include="OrderDetails.cs" />
-    <Compile Include="OrderService.cs" />
+    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
