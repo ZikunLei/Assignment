@@ -19,10 +19,10 @@ namespace Order
         public DateTime DateTime { get; set; }
 
         //保存每一个订单的明细项目
-        public List<OrderDetails> orderItemList = new List<OrderDetails>();
+        private List<OrderDetails> orderItemList;
 
         //总价
-        public float TotalPrice
+        public double TotalPrice
         {
             get => orderItemList.Sum(d => d.TotalPrice);
         }
@@ -30,15 +30,21 @@ namespace Order
         public Order()
         {
             DateTime = DateTime.Now;
-
+            orderItemList = new List<OrderDetails>();
         }
 
         //构造函数
-        public Order(int orderId, Customer Customer, DateTime DateTime)
+        public Order(int orderId, Customer Customer, List<OrderDetails> items)
         {
             this.orderId = orderId;
             this.Customer = Customer;
-            this.DateTime = DateTime;
+            this.DateTime = DateTime.Now;
+            this.orderItemList = (items == null) ? new List<OrderDetails>() : items;
+        }
+
+        public List<OrderDetails> Details
+        {
+            get { return orderItemList; }
         }
 
         //添加明细
@@ -55,6 +61,12 @@ namespace Order
         public void deleteDetails(int num)
         {
             orderItemList.RemoveAt(num);
+        }
+
+        //删除项
+        public void RemoveDetail(OrderDetails orderItem)
+        {
+            Details.Remove(orderItem);
         }
 
         //重写ToSring方法

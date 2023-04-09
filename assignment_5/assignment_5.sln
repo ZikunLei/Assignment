@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Order", "Order\Order.csproj
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrderUTest", "OrderUTest\OrderUTest.csproj", "{A4020100-6DA2-4562-91A3-4850D234A542}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrderWindowsFormsApp", "OrderWindowsFormsApp\OrderWindowsFormsApp.csproj", "{D82DBAF3-0F84-4074-8E01-D51F54702FDA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrderWinform", "OrderWinform\OrderWinform.csproj", "{ECB64307-9A22-4AEF-AEBD-11FFEFDA03C6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,10 +23,10 @@ Global
 		{A4020100-6DA2-4562-91A3-4850D234A542}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A4020100-6DA2-4562-91A3-4850D234A542}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A4020100-6DA2-4562-91A3-4850D234A542}.Release|Any CPU.Build.0 = Release|Any CPU
-		{D82DBAF3-0F84-4074-8E01-D51F54702FDA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D82DBAF3-0F84-4074-8E01-D51F54702FDA}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D82DBAF3-0F84-4074-8E01-D51F54702FDA}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D82DBAF3-0F84-4074-8E01-D51F54702FDA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ECB64307-9A22-4AEF-AEBD-11FFEFDA03C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ECB64307-9A22-4AEF-AEBD-11FFEFDA03C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ECB64307-9A22-4AEF-AEBD-11FFEFDA03C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ECB64307-9A22-4AEF-AEBD-11FFEFDA03C6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

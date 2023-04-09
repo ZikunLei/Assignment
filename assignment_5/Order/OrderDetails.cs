@@ -10,24 +10,33 @@ namespace Order
     public class OrderDetails
     {
         //货物对象
-        public Good Good;
+        public Good Good { get; set; }
+
+        //索引
+        public int index { get; set; }
 
         //货物数量
         public int Quantity { get; set; }
 
-        //明细总价
-        public float TotalPrice
-        {
-            get => Good.Price * Quantity;
-        }
+        //货物名称
+        public string goodsName { get => Good != null ? this.Good.goodName : ""; }
+
+        
 
         public OrderDetails() { }
 
         //构造函数
-        public OrderDetails(Good good, int quantity)
+        public OrderDetails(int index, Good good, int quantity)
         {
+            this.index = index;
             this.Good = good;
             this.Quantity = quantity;
+        }
+
+        //明细总价
+        public double TotalPrice
+        {
+            get => Good == null ? 0.0 : Good.goodPrice * Quantity;
         }
 
         public override bool Equals(object obj)
@@ -40,7 +49,7 @@ namespace Order
 
         public override string ToString()
         {
-            return $"OrderDetail:{Good},{Quantity}";
+            return $"[No.:{index},goods:{goodsName},quantity:{Quantity},totalPrice:{TotalPrice}]";
         }
 
         public override int GetHashCode()

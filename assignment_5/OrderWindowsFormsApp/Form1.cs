@@ -1,4 +1,5 @@
 ﻿using System;
+using Order;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,6 +13,7 @@ namespace OrderWindowsFormsApp
 {
     public partial class Form1 : Form
     {
+        OrderService orderService = new OrderService();
         public Form1()
         {
             InitializeComponent();
@@ -32,27 +34,27 @@ namespace OrderWindowsFormsApp
 
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void change_Click(object sender, EventArgs e)
         {
-            Form4 f4 = new Form4();
+            change_Form4 f4 = new change_Form4();
             f4.Show();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void createOrder_Click(object sender, EventArgs e)
         {
-            Form2 f2 = new Form2();
+            createOrder_Form2 f2 = new createOrder_Form2();
             f2.Show();
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void search_Click(object sender, EventArgs e)
         {
-            Form3 f3 = new Form3();
+            search_Form3 f3 = new search_Form3();
             f3.Show();
         }
 
-        private void button4_Click(object sender, EventArgs e)
+        private void delete_Click(object sender, EventArgs e)
         {
-            Form5 f5 = new Form5();
+            delete_Form5 f5 = new delete_Form5();
             f5.Show();
         }
     }

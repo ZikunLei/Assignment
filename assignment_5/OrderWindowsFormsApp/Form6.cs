@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace OrderWindowsFormsApp
 {
-    public partial class change_Form4 : Form
+    public partial class createDetails_Form6 : Form
     {
-        public change_Form4()
+        public createDetails_Form6()
         {
             InitializeComponent();
+        }
+
+        private void addDetails_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

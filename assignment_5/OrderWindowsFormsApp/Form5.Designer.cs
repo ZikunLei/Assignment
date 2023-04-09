@@ -1,6 +1,6 @@
 ﻿namespace OrderWindowsFormsApp
 {
-    partial class Form5
+    partial class delete_Form5
     {
         /// <summary>
         /// Required designer variable.
@@ -30,13 +30,14 @@
         {
             this.SuspendLayout();
             // 
-            // Form5
+            // delete_Form5
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Name = "Form5";
+            this.Name = "delete_Form5";
             this.Text = "删除订单";
+            this.Load += new System.EventHandler(this.delete_Form5_Load);
             this.ResumeLayout(false);
 
         }

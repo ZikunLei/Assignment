@@ -9,13 +9,13 @@ namespace Order
     //顾客类
     public class Customer
     {
-        public int customerId { get; set; }
+        public string customerId { get; set; }
 
         public string customerName { get; set; }
 
         public Customer() { }
 
-        public Customer(int id, string name)
+        public Customer(string id, string name)
         {
             this.customerId = id;
             this.customerName = name;
@@ -23,7 +23,7 @@ namespace Order
 
         public override string ToString()
         {
-            return $"CustomerId:{customerId}, CustomerName:{customerName}";
+            return $"{customerName}";
         }
 
         public override bool Equals(object obj)

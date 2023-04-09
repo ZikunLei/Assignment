@@ -49,13 +49,19 @@ namespace Order
             return orderList.FirstOrDefault(o => o.orderId == orderId);
         }
 
+        //找ID
+        public Order getOrder(int id)
+        {
+            return orderList.Where(o => o.orderId == id).FirstOrDefault();
+        }
+
         //根据Id删除订单
         public void removeOrder(int orderId)
         {
-            int idx = orderList.FindIndex(o => o.orderId == orderId);
-            if (idx >= 0)
+            Order order = getOrder(orderId);
+            if (order != null)
             {
-                orderList.RemoveAt(idx);
+                orderList.Remove(order);
             }
         }
 
@@ -78,7 +84,7 @@ namespace Order
         public List<Order> getByGoodsName(string goodsName)
         {
             var query = orderList.Where(
-              o => o.orderItemList.Any(d => d.Good.goodName == goodsName))
+              o => o.Details.Any(d => d.Good.goodName == goodsName))
                 .OrderBy(o => o.TotalPrice);
             return query.ToList();
         }

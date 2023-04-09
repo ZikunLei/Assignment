@@ -1,6 +1,6 @@
 ﻿namespace OrderWindowsFormsApp
 {
-    partial class Form4
+    partial class change_Form4
     {
         /// <summary>
         /// Required designer variable.
@@ -30,12 +30,12 @@
         {
             this.SuspendLayout();
             // 
-            // Form4
+            // change_Form4
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Name = "Form4";
+            this.Name = "change_Form4";
             this.Text = "修改订单";
             this.ResumeLayout(false);
 
