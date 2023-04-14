@@ -55,7 +55,7 @@ namespace assignment_7
         public void Start()
         {
             //初始化，清除已加载的
-            downloaded.Clear();
+             downloaded.Clear();
             loadedQueue.Clear();
             loadedQueue.Enqueue(beginningURL);
 
